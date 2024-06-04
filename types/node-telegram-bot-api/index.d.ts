@@ -1963,6 +1963,7 @@ declare class TelegramBot extends TelegramBotEventEmitter<TelegramBot.TelegramEv
     ): Promise<TelegramBot.GameHighScore[]>;
 
     deleteMessage(chatId: TelegramBot.ChatId, messageId: number, options?: any): Promise<boolean>;
+    deleteMessages(chatId: TelegramBot.ChatId, messageIds: number[], options?: any): Promise<boolean>;
 
     sendInvoice(
         chatId: TelegramBot.ChatId,
